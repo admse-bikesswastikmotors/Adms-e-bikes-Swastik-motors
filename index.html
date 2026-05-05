@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Swastik Motors - Demo</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#09050f;color:#fff;scroll-behavior:smooth}
+nav{position:fixed;top:0;left:0;width:100%;z-index:999;background:rgba(75,0,110,.92);backdrop-filter:blur(10px);padding:14px 7%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:900;letter-spacing:1px}
+nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:700}
+.hero{min-height:100vh;padding:120px 7% 60px;display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center;background:radial-gradient(circle at top left,#8420b8,#13051d 55%,#050207)}
+.badge{display:inline-block;background:#ffe600;color:#290032;padding:9px 16px;border-radius:999px;font-weight:900;margin-bottom:18px;animation:pulse 1.4s infinite}
+h1{font-size:58px;line-height:1.05;margin-bottom:16px}
+h1 span{color:#d970ff}
+.hero p{font-size:20px;line-height:1.6;color:#eee;margin-bottom:24px}
+.btn{display:inline-block;background:#ffb000;color:#19001f;padding:13px 22px;border-radius:12px;text-decoration:none;font-weight:900;margin:7px;box-shadow:0 0 20px rgba(255,176,0,.35)}
+.btn.secondary{background:#fff;color:#5b0085}
+.hero-card{background:linear-gradient(145deg,#ffffff14,#ffffff05);border:1px solid #ffffff24;border-radius:28px;padding:20px;box-shadow:0 30px 80px #0009;animation:float 3s ease-in-out infinite}
+.hero-card img{width:100%;height:430px;object-fit:cover;border-radius:22px}
+.section{padding:80px 7%;text-align:center}
+.section h2{font-size:38px;margin-bottom:12px;color:#e8c7ff}
+.section>p{color:#ddd;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.card{background:#15101d;border:1px solid #ffffff18;border-radius:24px;padding:18px;text-align:left;transition:.35s;overflow:hidden}
+.card:hover{transform:translateY(-10px) scale(1.02);box-shadow:0 25px 55px #7b00b855}
+.card img{width:100%;height:210px;object-fit:cover;border-radius:18px;margin-bottom:15px}
+.card h3{color:#ffdb4d;margin-bottom:8px}
+.spec{display:flex;justify-content:space-between;border-bottom:1px solid #ffffff14;padding:7px 0;color:#eee}
+.marquee{overflow:hidden;white-space:nowrap;background:#ffb000;color:#25002f;font-weight:900;padding:14px}
+.marquee span{display:inline-block;animation:scroll 18s linear infinite}
+.services{background:linear-gradient(135deg,#3d005c,#12021e)}
+.service{padding:26px;text-align:center}
+.footer{background:#050207;padding:35px 7%;text-align:center;color:#ccc}
+@keyframes pulse{50%{transform:scale(1.06);box-shadow:0 0 25px #ffe600}}
+@keyframes float{50%{transform:translateY(-14px)}}
+@keyframes scroll{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
+@media(max-width:800px){.hero{grid-template-columns:1fr;text-align:center}h1{font-size:40px}nav{display:block;text-align:center}.links{margin-top:10px}nav a{margin:0 8px}.hero-card img{height:300px}}
+
+.poster-wrap{
+  max-width:620px;
+  margin:0 auto;
+  padding:18px;
+  border-radius:28px;
+  background:linear-gradient(145deg,#ffffff18,#ffffff06);
+  border:1px solid #ffffff24;
+  box-shadow:0 25px 70px #7b00b860;
+}
+.poster-wrap img{
+  width:100%;
+  border-radius:20px;
+  display:block;
+  animation:posterGlow 2.8s ease-in-out infinite;
+}
+@keyframes posterGlow{
+  50%{box-shadow:0 0 35px rgba(255,176,0,.55);transform:scale(1.01)}
+}
+
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">SWASTIK MOTORS</div>
+  <div class="links">
+    <a href="#models">Models</a><a href="#poster">Poster</a><a href="#services">Services</a><a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div>
+    <div class="badge">1 + 2 Years Warranty Available &nbsp; | &nbsp; Lithium-ion Batteries</div>
+    <h1>ADMS eBikes at <span>Swastik Motors</span></h1>
+    <p>Smart Bikes for Smart Citizens. Sales, Service and Spare Parts available at Yapral, Secunderabad.</p>
+    <a class="btn" href="tel:+918837350982">Call Now</a>
+    <a class="btn secondary" href="https://wa.me/919966980858">WhatsApp</a>
+  </div>
+  <div class="hero-card">
+    <img src="images/shop.jpg" alt="ADMS Swastik Motors poster">
+  </div>
+</section>
+
+<div class="marquee"><span>⚡ ADMS eBikes • Sales • Service • Spare Parts • Warranty Support • Visit Swastik Motors Yapral Today ⚡</span></div>
+
+<section id="models" class="section">
+  <h2>Popular Models</h2>
+  <p>Demo product cards based on your given details.</p>
+  <div class="grid">
+    <div class="card"><img src="images/sathi-plus.jpg"><h3>ADMS Sathi Plus</h3><div class="spec"><b>Price</b><span>₹1,42,000</span></div><div class="spec"><b>Range</b><span>120km</span></div><div class="spec"><b>Speed</b><span>45km/hr</span></div><div class="spec"><b>Load</b><span>500kgs</span></div></div>
+    <div class="card"><img src="images/rider.jpg"><h3>ADMS Rider</h3><div class="spec"><b>Price</b><span>₹55,000</span></div><div class="spec"><b>Range</b><span>60km</span></div><div class="spec"><b>Speed</b><span>50km/hr</span></div><div class="spec"><b>Warranty</b><span>6/6 months</span></div></div>
+    <div class="card"><img src="images/gtr.jpg"><h3>ADMS GTR</h3><div class="spec"><b>Price</b><span>₹83,000</span></div><div class="spec"><b>Range</b><span>80km</span></div><div class="spec"><b>Speed</b><span>50km/hr</span></div><div class="spec"><b>Charge</b><span>4–5 hrs</span></div></div>
+    <div class="card"><img src="images/phantom.jpg"><h3>ADMS Phantom</h3><div class="spec"><b>Price</b><span>₹1,50,000</span></div><div class="spec"><b>Range</b><span>120km</span></div><div class="spec"><b>Speed</b><span>70km/hr</span></div><div class="spec"><b>Warranty</b><span>1/2 years</span></div></div>
+  </div>
+</section>
+
+
+<section id="poster" class="section">
+  <h2>Latest Swastik Motors Offer Poster</h2>
+  <p>Electric Vehicles is Future • E-Bikes start from ₹55,000 • EMI Available • Sales, Service & Spare Parts Available</p>
+  <div class="poster-wrap">
+    <img src="images/swastik-flex-poster.png" alt="Swastik Motors ADMS E-Bikes poster">
+  </div>
+</section>
+
+<section id="services" class="section services">
+  <h2>Sales • Service • Spare Parts</h2>
+  <div class="grid">
+    <div class="card service"><h3>🛵 eBike Sales</h3><p>ADMS electric bikes with multiple range and speed options.</p></div>
+    <div class="card service"><h3>🔧 Service</h3><p>Support for maintenance, repair and warranty guidance.</p></div>
+    <div class="card service"><h3>⚙ Spare Parts</h3><p>Controller, motor, brake shoe, wiring harness, lock set and more.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Swastik Motors</h2>
+  <p>H. No 12-62/5, Ground Floor, JJ Nagar, Yapral Near State Bank of India, Secunderabad, Telangana - 500087</p>
+  <a class="btn" href="tel:+918837350982">Call +91 883-7350982</a>
+  <a class="btn secondary" href="https://wa.me/919966980858">WhatsApp 9966980858</a>
+</section>
+
+<footer class="footer">© 2026 Swastik Motors - ADMS eBikes</footer>
+</body>
+</html>
